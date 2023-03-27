@@ -20,7 +20,7 @@ if(numericCharacters === "Yes") {myPassword.push(...numericArray)}
 var specialCharacters = prompt("Would you like to include special characters? Yes or No.")
 if(specialCharacters === "Yes") {myPassword.push(...specialCharactersArray)}
 
-var passwordLength = prompt("How many characters would you like your password to be?");
+var passwordLength = prompt("How many characters would you like your password to be? (Must choose a number between 7 and 129)");
 passwordLength = parseInt(passwordLength);
 if (isNaN(passwordLength) || passwordLength < 8) {
   alert("Invalid password length. Password length must be at least 8 characters.");
